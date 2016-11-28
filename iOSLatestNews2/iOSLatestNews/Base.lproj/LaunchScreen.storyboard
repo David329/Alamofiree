@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" translatesAutoresizingMaskIntoConstraints="NO" id="BiF-wd-5wf">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="736" id="AbS-Dj-RfI"/>
+                                    <constraint firstAttribute="width" constant="414" id="ePH-xy-ntS"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AbS-Dj-RfI"/>
+                                        <exclude reference="ePH-xy-ntS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AbS-Dj-RfI"/>
+                                        <include reference="ePH-xy-ntS"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUk-4B-6hA">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="cOt-W0-02x">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="375"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.30588235294117649" green="0.74117647058823533" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.5" height="0.5"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cOt-W0-02x"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="cOt-W0-02x"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsAPI.org" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0r-Nq-1LI">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.30588235289999999" green="0.74117647060000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.5" height="0.5"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BiF-wd-5wf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="2lR-qe-AbX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BiF-wd-5wf" secondAttribute="trailing" constant="-55" id="6el-MY-DUf"/>
+                            <constraint firstItem="BiF-wd-5wf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6lE-vm-Chb"/>
+                            <constraint firstItem="M0r-Nq-1LI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="95" id="8Tp-A0-fEX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-16"/>
+                            </constraint>
+                            <constraint firstItem="sUk-4B-6hA" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="CiP-aQ-iSV"/>
+                            <constraint firstItem="M0r-Nq-1LI" firstAttribute="top" secondItem="sUk-4B-6hA" secondAttribute="bottom" constant="8" symbolic="YES" id="EnX-Zj-23q"/>
+                            <constraint firstItem="sUk-4B-6hA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IfH-L1-bPA"/>
+                            <constraint firstItem="M0r-Nq-1LI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KdP-xa-1Zq">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="M0r-Nq-1LI" firstAttribute="top" secondItem="sUk-4B-6hA" secondAttribute="bottom" constant="8" symbolic="YES" id="N7j-8W-zUA"/>
+                            <constraint firstItem="sUk-4B-6hA" firstAttribute="leading" secondItem="M0r-Nq-1LI" secondAttribute="leading" id="OrL-nr-M8B"/>
+                            <constraint firstItem="sUk-4B-6hA" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="259" id="Owo-tU-cCe">
+                                <variation key="heightClass=regular-widthClass=compact" constant="303"/>
+                            </constraint>
+                            <constraint firstItem="sUk-4B-6hA" firstAttribute="centerX" secondItem="M0r-Nq-1LI" secondAttribute="centerX" id="PAW-tw-Wwi">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="BiF-wd-5wf" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Pl9-WJ-nSl"/>
+                            <constraint firstItem="BiF-wd-5wf" firstAttribute="leading" secondItem="sUk-4B-6hA" secondAttribute="leading" id="Szf-qJ-GEf"/>
+                            <constraint firstAttribute="trailing" secondItem="sUk-4B-6hA" secondAttribute="trailing" id="UDK-CJ-f6B"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="BiF-wd-5wf" secondAttribute="bottom" constant="-69" id="Xhs-i3-S5h"/>
+                            <constraint firstItem="sUk-4B-6hA" firstAttribute="trailing" secondItem="M0r-Nq-1LI" secondAttribute="trailing" id="agS-dc-aaU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2lR-qe-AbX"/>
+                                <exclude reference="6el-MY-DUf"/>
+                                <exclude reference="6lE-vm-Chb"/>
+                                <exclude reference="Pl9-WJ-nSl"/>
+                                <exclude reference="Szf-qJ-GEf"/>
+                                <exclude reference="Xhs-i3-S5h"/>
+                                <exclude reference="CiP-aQ-iSV"/>
+                                <exclude reference="IfH-L1-bPA"/>
+                                <exclude reference="OrL-nr-M8B"/>
+                                <exclude reference="Owo-tU-cCe"/>
+                                <exclude reference="PAW-tw-Wwi"/>
+                                <exclude reference="UDK-CJ-f6B"/>
+                                <exclude reference="agS-dc-aaU"/>
+                                <exclude reference="8Tp-A0-fEX"/>
+                                <exclude reference="EnX-Zj-23q"/>
+                                <exclude reference="KdP-xa-1Zq"/>
+                                <exclude reference="N7j-8W-zUA"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6lE-vm-Chb"/>
+                                <include reference="Szf-qJ-GEf"/>
+                                <include reference="CiP-aQ-iSV"/>
+                                <include reference="IfH-L1-bPA"/>
+                                <include reference="OrL-nr-M8B"/>
+                                <include reference="UDK-CJ-f6B"/>
+                                <include reference="agS-dc-aaU"/>
+                                <include reference="EnX-Zj-23q"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="2lR-qe-AbX"/>
+                                <include reference="6el-MY-DUf"/>
+                                <include reference="Pl9-WJ-nSl"/>
+                                <include reference="Xhs-i3-S5h"/>
+                                <include reference="Owo-tU-cCe"/>
+                                <include reference="PAW-tw-Wwi"/>
+                                <include reference="8Tp-A0-fEX"/>
+                                <include reference="KdP-xa-1Zq"/>
+                                <include reference="N7j-8W-zUA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="372.86356821589209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="news" width="640" height="360"/>
+    </resources>
+</document>
